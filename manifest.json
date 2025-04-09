@@ -1,0 +1,48 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Speed Controller",
+    "version": "1.0",
+    "description": "Control YouTube video speed with key bindings.",
+    "permissions": [
+        "tabs"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.youtube.com/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "commands": {
+        "speed_up": {
+            "suggested_key": {
+                "default": "Ctrl+Up"
+            },
+            "description": "Increase playback speed"
+        },
+        "speed_down": {
+            "suggested_key": {
+                "default": "Ctrl+Down"
+            },
+            "description": "Decrease playback speed"
+        },
+        "reset_speed": {
+            "suggested_key": {
+                "default": "Ctrl+0"
+            },
+            "description": "Reset playback speed"
+        },
+        "set_speed_1.5x": {
+            "suggested_key": {
+                "default": "Ctrl+1"
+            },
+            "description": "Set speed to 1.5x"
+        }
+    }
+}
