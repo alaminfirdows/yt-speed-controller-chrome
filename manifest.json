@@ -34,13 +34,13 @@
         },
         "reset_speed": {
             "suggested_key": {
-                "default": "Ctrl+0"
+                "default": "Ctrl+Shift+Down"
             },
             "description": "Reset playback speed"
         },
-        "set_speed_1.5x": {
+        "set_speed_1_5x": {
             "suggested_key": {
-                "default": "Ctrl+1"
+                "default": "Ctrl+Shift+Up"
             },
             "description": "Set speed to 1.5x"
         }
